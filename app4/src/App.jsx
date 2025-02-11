@@ -1,20 +1,34 @@
-import Bhopal from "./assets/app2";
+import EmpData from "./EmpData";
+import EmpDesign from "./empdesign";
 
-const sum=()=>{
-  return(
-<>
-<h3>form</h3>
-name:<input type="text" /><br />
-lastname:<input type="text" /><br />
-rollno:<input type="text" /><br />
-year:<input type="text" /><br />
-strem:<input type="text" />
-<Bhopal/>
+const App=()=>{
+const ans=EmpData.map((key)=>
+  
+<EmpDesign
+
+nm={key.Name}
+Id={key.Id}
+sal={key.Salary}
+join={key.Joindate}/>);
+
+return(
+
+  <>
+  <h1>Employ Data</h1><hr />
+  <table>
+    <tr>
+<td>Name </td>
+<td>Id </td>
+<td>Salary </td>
+<td>JoinDate </td>
+</tr>
+{ans}
 
 
-</>
-  )
+  </table>
+  
+  </>
+)
+
 }
-export default sum;
-
-
+export default App;
