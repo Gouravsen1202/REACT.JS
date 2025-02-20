@@ -1,0 +1,28 @@
+{
+    "student":[
+        {
+            
+            "roll":1234,
+            "name":"gourv",
+            "city":"bhopal"
+        },
+        {
+            
+            "roll":12,
+            "name":"graj",
+            "city":"sehore"
+        },
+        {
+            
+            "roll":122234,
+            "name":"sourav",
+            "city":"indore"
+        },
+        {
+            
+            "roll":13234,
+            "name":"ajay",
+            "city":"vidisha"
+        }
+    ]
+}
